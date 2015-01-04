@@ -1,0 +1,72 @@
+.dock {
+  position: fixed;
+  left: 25%;
+  height: 40px;
+  width: 670px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: rgba(154,147,147,1);
+  -webkit-box-shadow: 2px 2px 3px rgba(172, 172, 172, 0.4);
+  -moz-box-shadow: 2px 2px 3px rgba(172, 172, 172, 0.4);
+  box-shadow: 2px 2px 3px rgba(172, 172, 172, 0.4);
+}
+
+#dock1 {
+  bottom: 100px;
+}
+
+#dock2 {
+  bottom: 200px;
+}
+
+.link{
+  position: relative;
+  bottom: 60px;
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  -webkit-transition: all 0.60s linear 0s;
+  -moz-transition: all 0.60s linear 0s;
+  -o-transition: all 0.60s linear 0s;
+  -ms-transition: all 0.60s linear 0s;
+  transition: all 0.60s linear 0s;
+}
+
+.rotate .link:hover {
+  background-size: 100px;
+  background-position: top;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.zoom .link:hover{
+  background-size:100px;
+  background-position: bottom;
+}
+
+.home {
+  background: url(../images/home.png) center no-repeat;
+}
+
+.about {
+  background: url(../images/about.png) center no-repeat;
+}
+
+.photos {
+  background: url(../images/photos.png) center no-repeat;
+}
+
+.faq {
+  background: url(../images/faq.png) center no-repeat;
+}
+
+.download {
+  background: url(../images/download.png) center no-repeat;
+}
+
+.contact {
+  background: url(../images/contact.png) center no-repeat;
+}
