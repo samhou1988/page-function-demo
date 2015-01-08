@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swipe Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="bower_components/swiper/dist/idangerous.swiper.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body{
+      margin:0;font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .demo {
+      width: 100%;
+      height: 100%;
+      background: red;
+    }
+@-webkit-keyframes upArrow {
+    0%,30% {
+        opacity: 0;
+        -webkit-transform: translate(0,10px)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0,0)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0,0)
+    }
+}
+
+@-moz-keyframes upArrow {
+    0%,30% {
+        opacity: 0;
+        -moz-transform: translate(0,10px)
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: translate(0,0)
+    }
+
+    100% {
+        opacity: 0;
+        -moz-transform: translate(0,0)
+    }
+}
+
+@-ms-keyframes upArrow {
+    0%,30% {
+        opacity: 0;
+        -ms-transform: translate(0,10px)
+    }
+
+    60% {
+        opacity: 1;
+        -ms-transform: translate(0,0)
+    }
+
+    100% {
+        opacity: 0;
+        -ms-transform: translate(0,0)
+    }
+}
+
+@keyframes upArrow {
+    0%,30% {
+        opacity: 0;
+        transform: translate(0,10px)
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(0,0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0,0)
+    }
+}
+    .arrow-up{
+      position:absolute; bottom:10px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .arrow-up img{
+      -webkit-animation: upArrow 1.5s infinite ease-in-out;
+      -moz-animation: upArrow 1.5s infinite ease-in-out;
+      -ms-animation: upArrow 1.5s infinite ease-in-out;
+      animation: upArrow 1.5s infinite ease-in-out;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-size: 100% 100%;
+      position: relative;
+    }
+
+    .slide-2 {
+      background-image: url(./images/2015_02.png);
+    }
+
+    .slide-3 {
+      background-image: url(./images/2015_03.jpg);
+    }
+
+    .slide-4 {
+      background-image: url(./images/2015_04.jpg);
+    }
+
+    .slide-5 {
+      background-image: url(./images/2015_05.jpg);
+    }
+
+    .slide-6 {
+      background-image: url(./images/2015_06.jpg);
+    }
+
+    .slide-7 {
+      background-image: url(./images/2015_07.jpg);
+    }
+
+    .slide-8 {
+      background-image: url(./images/2015_08.jpg);
+    }
+
+    @media screen (min-width: 320px) {
+      .swiper-container:before {
+        content: "test";
+      }
+    }
+
+    </style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-2">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-3">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-4">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-5">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-6">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-7">
+        <div style="" class="arrow-up">
+          <img src="./images/dfcar_arrow_up.png"/>
+         </div>
+      </div>
+      <div class="swiper-slide slide-8"></div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/swiper/dist/idangerous.swiper.min.js"></script>
+  <script>
+  $(function () {
+    $(".swiper-container").height(document.documentElement.clientHeight);
+    var mySwiper = new Swiper('.swiper-container',{
+    mode: 'vertical',
+    loop: true
+  })
+  });
+  </script>
+</body>
+</html>
