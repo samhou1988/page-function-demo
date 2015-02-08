@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    <div class="search">
+        <form action="http://www.baidu.com/s?wd=" id="form" method="get">
+            <input type="text" id="q" autofocus>
+            <button type="submit">百度一下</button>
+        </form>
+    </div>
+    <script>
+    window.onload = function () {
+        var form = document.querySelector('#form');
+        var q = document.querySelector('#q');
+
+        // 表单提交事件
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            search();
+        }, false);
+
+        // enter
+        form.addEventListener('keypress', function (e) {
+            if (13 == e.keyCode) {
+                search();
+            }
+        }, false);
+
+
+        function search() {
+            var val = q.value;
+            console.log(val);
+            if (val.trim()) {
+                window.location = "http://www.baidu.com/s?wd=" + encodeURIComponent(val);
+            } else {
+                alert('param error');
+            }
+        }
+    };
+    </script>
+</body>
+</html>
