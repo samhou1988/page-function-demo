@@ -1,0 +1,60 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+p {
+    margin: 0;
+}
+
+body {
+    font: 16px/1.428 "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+.wrapper {
+    -webkit-overflow-scrolling: touch;
+    padding: 5px;
+}
+
+.header ~ .wrapper {
+    padding-top: 44px;
+}
+
+.footer ~ .wrapper {
+    padding-bottom: 44px;
+}
+
+.header,
+.footer {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #299BB8;
+    color: #fff;
+}
+
+.header {
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+}
+
+.top-fixed,
+.bottom-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.top-fixed {
+    top: 0;
+}
+
+.bottom-fixed {
+    bottom: 0;
+}

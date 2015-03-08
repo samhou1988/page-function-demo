@@ -1,0 +1,130 @@
+body,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover,
+a:link,
+a:visited,
+a:focus {
+    color: #000;
+}
+
+.pull-left,
+.pull-right {
+    display: inline;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+body {
+    font: 16px/1.428 sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    background: #458fd2;
+}
+
+.nav {
+
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    padding: 5px 12px;
+    color: #fff;
+}
+
+.nav .sub-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.nav > li:hover a,
+.nav > li.active a {
+    background: #474e5d;
+}
+
+.nav > li:hover .sub-nav,
+.nav li.active .sub-nav {
+    display: block;
+}
+
+.nav .sub-nav > li a {
+    background: #474e5d;
+}
+
+.nav .sub-nav > li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    .nav > li {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
