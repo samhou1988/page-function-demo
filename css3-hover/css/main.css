@@ -1,0 +1,59 @@
+.demo,
+.img,
+.mask,
+.border {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+}
+
+.demo {
+    position: relative;
+    display: block;
+}
+
+.img {
+    background-image: url(../img/demo.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.mask,
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.mask {
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}
+
+.mask .info {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.border {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: #072256;
+    border-left-color: #072256;
+    border-right-color: #e07514;
+    border-bottom-color: #e07514;
+}
+
+.demo:hover .mask {
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.demo:hover .border {
+    transform: rotate(180deg);
+}
